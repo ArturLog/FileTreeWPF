@@ -1,0 +1,24 @@
+﻿<Window x:Class="lab2.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lab2"
+        mc:Ignorable="d"
+        Title="Form" Height="400" Width="300">
+    <Grid Margin="0,0,10,-6">
+        <Label Content="Name:" Margin="47,34,126,305"></Label>
+        <TextBox Name="name" Margin="112,38,30,310"></TextBox>
+        
+        <RadioButton Name="File1" Margin="112,85,70,268">File</RadioButton>
+        <RadioButton Name="Directory1" Margin="112,103,70,249">Directory</RadioButton>
+        <CheckBox Name="read1" Margin="112,122,70,231">ReadOnly</CheckBox>
+        <CheckBox Name="archive1" Margin="112,141,33,212">Archive</CheckBox>
+        <CheckBox Name="hidden1" Margin="112,159,30,195">Hidden</CheckBox>
+        <CheckBox Name="system1" Margin="112,178,70,177">System</CheckBox>
+
+
+        <Button Content="Ok" Click="CreateNewFile" Margin="47,306,178,34"></Button>
+        <Button Content="Close" Click="Exit" Margin="184,306,33,34"></Button>
+    </Grid>
+</Window>

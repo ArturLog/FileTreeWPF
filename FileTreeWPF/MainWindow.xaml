@@ -1,0 +1,36 @@
+﻿<Window x:Class="lab2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lab2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <ToolBarTray Background="White">
+            <ToolBar Band="1" BandIndex="1" Margin="0,0,-51,-36" Header="File">
+                <Menu ToolBar.OverflowMode="Always">
+                    <MenuItem Header="Open" Click="ChooseFolder"></MenuItem>
+                    <MenuItem Header="About" Click="About"></MenuItem>
+                    <MenuItem Header="Exit" Click="Exit"></MenuItem>
+                </Menu>
+            </ToolBar>
+        </ToolBarTray>
+
+
+        <TreeView Name="TreeView1" MouseDoubleClick="ChangeRAHS" HorizontalAlignment="Left" VerticalAlignment="Top" Width="347" Height="337" Margin="53,38,0,0">
+
+        </TreeView>
+
+        <TextBlock Name="TextBlock1" Margin="400,38,10,59" >
+
+        </TextBlock>
+
+        <StatusBar Name="sbar"  VerticalAlignment="Bottom" Background="Beige" >
+            <StatusBarItem>
+                <TextBlock Name="rahstext">RAHS</TextBlock>
+            </StatusBarItem>
+        </StatusBar>
+    </Grid>
+
+</Window>

@@ -1,0 +1,14 @@
+﻿<Window x:Class="lab2.WindowAbout"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lab2"
+        mc:Ignorable="d"
+        Title="About" Height="200" Width="200">
+    <Grid>
+        <TextBlock Margin="41,48,41,16"><Run Text="           "/><Run Text=" "/><Run Language="pl-pl" Text=" "/><Run Text="About"/></TextBlock>
+        <Button Content="Exit" Click="Exit" Margin="59,118,59,24" RenderTransformOrigin="0.5,0.5">
+        </Button>
+    </Grid>
+</Window>
